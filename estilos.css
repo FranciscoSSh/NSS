@@ -960,16 +960,16 @@ $MENU
 }
 
 .item.SobreNosotros .link::before
-{ content: 's'; }
+{ content: ''; }
 
 .item.soporteservicios .link::before
-{ content: 'ss'; }
+{ content: ''; }
 
 .item.videos .link::before
-{ content: 'i'; }
+{ content: ''; }
 
 .item.contacto .link::before
-{ content: 'c'; }
+{ content: ''; }
 
 
 
