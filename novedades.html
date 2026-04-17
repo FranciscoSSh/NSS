@@ -1,22 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<title>NSS - Novedades</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Course Project">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
-<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
-<link href="plugins/fontawesome-free-5.0.1/css/fontawesome.css" rel="stylesheet" type="text/css">
-<link href="plugins/fontawesome-free-5.0.1/css/brands.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="styles/novedades_styles.css">
-<link rel="stylesheet" type="text/css" href="styles/novedades_responsive.css">
-<link rel="stylesheet" type="text/css" href="styles/parpadeo.css">
-<link rel="icon" type="image/png" href="images/logonss.png">
-<link rel="stylesheet" type="text/css" href="styles/wpcirculo.css">
-</head>
+	
+		<title>NSS - Productos</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Course Project">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600" rel="stylesheet">
+		<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+		<link href="plugins/fontawesome-free-5.0.1/css/fontawesome.css" rel="stylesheet" type="text/css">
+		<link href="plugins/fontawesome-free-5.0.1/css/brands.css" rel="stylesheet" type="text/css">
+		<link rel="icon" type="image/png" href="images/logonss.png">
+		<link href="plugins/fontawesome-free-5.0.1/css/all.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+		<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+		<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+		<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+		<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+		<link rel="stylesheet" type="text/css" href="styles/parpadeo.css">
+		<link rel="stylesheet" type="text/css" href="styles/wpcirculo.css">
+		</head>
 <body>
+	
+	<style>
+		/* Ajuste del Header */
+		.header { background: #ffffff !important; box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important; height: 100px !important; }
+		.main_nav_item a { color: #003d7c !important; font-weight: 600; }
+	
+		.nss_product_wrapper { padding: 80px 0; background: #ffffff; }
+	
+		.product_card_nss {
+			background: #fff;
+			border-radius: 20px;
+			overflow: hidden;
+			border: 1px solid #eee;
+			transition: all 0.3s ease;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+		}
+	
+		/* Contenedor de Imagen de Producto */
+		.product_img_container {
+			position: relative;
+			height: 250px;
+			overflow: hidden;
+			background: #f9f9f9;
+		}
+	
+		.product_img_container img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain; /* Para que los productos no se deformen */
+			padding: 20px;
+			transition: transform 0.6s ease;
+		}
+	
+		.product_card_nss:hover .product_img_container img {
+			transform: scale(1.1);
+		}
+	
+		/* Etiqueta de Stock/Precio */
+		.stock_badge {
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			background: #ffb606;
+			color: #003d7c;
+			padding: 5px 12px;
+			border-radius: 50px;
+			font-weight: 700;
+			font-size: 11px;
+			z-index: 2;
+		}
+	
+		.product_body_nss { padding: 25px; text-align: center; flex-grow: 1; }
+		.product_body_nss h4 { color: #003d7c; font-weight: 700; margin-bottom: 10px; font-size: 18px; }
+		.product_body_nss p { color: #666; font-size: 13px; margin-bottom: 20px; }
+	
+		.btn_nss_buy {
+			background: #003d7c;
+			color: #fff;
+			border-radius: 50px;
+			padding: 10px 20px;
+			font-weight: 600;
+			font-size: 13px;
+			transition: 0.3s;
+			text-decoration: none;
+			display: inline-block;
+		}
+	
+		.product_card_nss:hover {
+			box-shadow: 0 15px 35px rgba(0,61,124,0.1);
+			border-color: #003d7c;
+		}
+	</style>
+
+<div class="home_nss" style="height: 250px; margin-top: 100px; background: linear-gradient(45deg, #003d7c 0%, #0056b3 100%); display: flex; align-items: center; justify-content: center;">
+    <div style="text-align: center;">
+        <h1 style="color: #ffffff; font-size: 40px; font-weight: 800; text-transform: uppercase; margin: 0;">Catálogo de Productos</h1>
+        <p style="color: #ffb606; font-weight: 600; letter-spacing: 2px;">EQUIPAMIENTO TECNOLÓGICO Y REPUESTOS</p>
+    </div>
+</div>
+
+<section class="nss_product_wrapper">
+    <div class="container">
+        <div class="row">
+
+         
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product_card_nss">
+                    <div class="product_img_container">
+                        <span class="stock_badge">LICENCIA DIGITAL</span>
+                        <img src="images/suscripcion.jpg" alt="Microsoft 365">
+                    </div>
+                    <div class="product_body_nss">
+                        <h4>Suscripciones Microsoft 365</h4>
+                        <p>Planes Business Standard y Premium. Incluye instalación, migración de correos y soporte técnico.</p>
+                        <a href="https://wa.me/51977471539" class="btn_nss_buy">SOLICITAR COTIZACIÓN</a>
+                    </div>
+                </div>
+            </div>
+
+         
+
+        </div>
+    </div>
+</section>
 
 <div class="super_container">
 
@@ -58,11 +170,7 @@
 		</div>
 
 	</header>
-	<!-- wp flotante -->
-	<a href="https://api.whatsapp.com/send?phone=51977471539" class="btn-wsp" target="_blank">
-	    <i class="fab fa-whatsapp"></i>
-	</a>
-	<!--wp flotante -->
+
 	<!-- Menu -->
 	<div class="menu_container menu_mm">
 
@@ -103,489 +211,75 @@
 	
 	<!-- Home -->
 
-	<div class="home">
-		<div class="home_background_container prlx_parent">
-			<div class="home_background prlx" style="background-image:url(images/componentes.jpg)"></div>
-		</div>
-		<div class="home_content">
-			<h1>Productos</h1>
-		</div>
-	</div>
 
 	<!-- Popular -->
 
-	<div class="popular page_section">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<div class="section_title text-center">
-						<h1>En Stock</h1>
-					</div>
-				</div>
-			</div>
+<!-- wp flotante -->
+<a href="https://wa.me/51977471539" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
 
-			<div class="row course_boxes">
-				<!-- Popular Course Item 
-				<div class="col-lg-4 course_box">
-					<div class="card">
-						<img class="card-img-top" src="images/OFFICE PERSONAL 365.jpg" alt="https://unsplash.com/@kellybrito">
-						<div class="card-body text-center">
-							<div class="card-title"><a href=" https://wa.me/51960111844?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 1</a></div>
-							<div class="card-title"><a href=" https://wa.me/51977471539?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 2</a></div>
-							<div class="card-text">SOFTWARE: MICROSOFT 365 PERSONAL <BR> MARCA: MICROSOFT <BR> MODELO: PERSONAL <BR>DURACIÓN : 1 AÑO <BR>INCLUYE SOPORTE </div>
-						
-						</div>
-						<div class="price_box d-flex flex-row align-items-center">
-							<div class="course_author_image">
-								
-							</div>
-							<div class="course_author_name">MICROSOFT 365 </div>
-							<div class="course_price d-flex flex-column align-items-center justify-content-center"><span>S/79.00</span></div>
-						</div>
-					</div>
-				</div>-->
-				
-
-				<!-- Popular Course Item -->
-				<div class="col-lg-4 course_box">
-					<div class="card">
-						<img class="card-img-top" src="images/team256.jpeg" alt="https://unsplash.com/@kellybrito">
-						<div class="card-body text-center">
-							<div class="card-title"><a href=" https://wa.me/51960111844?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 1</a></div>
-							<div class="card-title"><a href=" https://wa.me/51977471539?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 2</a></div>
-							<div class="card-text">COMPONENTE: DISCO SOLIDO <BR> MARCA: TEAMGRUP <BR> MODELO: CX2  <BR>CAPACIDAD : 256gb <BR> -</div>
-						</div>
-						<div class="price_box d-flex flex-row align-items-center">
-							<div class="course_author_image">
-								
-							</div>
-							<div class="course_author_name">DISCO SOLIDO </div>
-							<div class="course_price d-flex flex-column align-items-center justify-content-center"><span>S/105.00</span></div>
-						</div>
-					</div>
-				</div>
-<!-- Popular Course Item 
-<div class="col-lg-4 course_box">
-	<div class="card">
-		<img class="card-img-top" src="images/agotado.jpg" alt="https://unsplash.com/@kellybrito">
-		<div class="card-body text-center">
-			<div class="card-title"><a href=" https://wa.me/51960111844?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 1</a></div>
-			<div class="card-title"><a href=" https://wa.me/51977471539?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 2</a></div>
-			<div class="card-text">COMPONENTE: DISCO SOLIDO <BR> MARCA: MSI <BR> MODELO: SPATIUM S270  <BR>CAPACIDAD : 240gb <BR> -</div>
-		</div>
-		<div class="price_box d-flex flex-row align-items-center">
-			<div class="course_author_image">
-				
-			</div>
-			<div class="course_author_name">DISCO SOLIDO </div>
-			<div class="course_price d-flex flex-column align-items-center justify-content-center"><span>S/110.00</span></div>
-		</div>
-	</div>
-</div>-->
-
-<!-- Popular Course Item -->
-<div class="col-lg-4 course_box">
-	<div class="card">
-		<img class="card-img-top" src="images/LENOVOSSD240.png" alt="https://unsplash.com/@kellybrito">
-		<div class="card-body text-center">
-			<div class="card-title"><a href=" https://wa.me/51960111844?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 1</a></div>
-			<div class="card-title"><a href=" https://wa.me/51977471539?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 2</a></div>
-			<div class="card-text">COMPONENTE: DISCO SOLIDO <BR> MARCA: LENOVO <BR> MODELO: LS800  <BR>CAPACIDAD : 240gb <BR> -</div>
-		</div>
-		<div class="price_box d-flex flex-row align-items-center">
-			<div class="course_author_image">
-				
-			</div>
-			<div class="course_author_name">DISCO SOLIDO </div>
-			<div class="course_price d-flex flex-column align-items-center justify-content-center"><span>S/110.00</span></div>
-		</div>
-	</div>
-</div>
-				<!-- Popular Course Item -->
-				<div class="col-lg-4 course_box">
-					<div class="card">
-						<img class="card-img-top" src="images/KINGSSDSATA240GB.jpg" alt="https://unsplash.com/@kellybrito">
-						<div class="card-body text-center">
-							<div class="card-title"><a href=" https://wa.me/51960111844?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 1</a></div>
-							<div class="card-title"><a href=" https://wa.me/51977471539?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 2</a></div>
-							<div class="card-text">COMPONENTE: DISCO SOLIDO <BR> MARCA: KINGSTON <BR> MODELO: A400 <BR>CAPACIDAD : 240GB <BR> -</div>
-						</div>
-						<div class="price_box d-flex flex-row align-items-center">
-							<div class="course_author_image">
-								
-							</div>
-							<div class="course_author_name">DISCO SOLIDO </div>
-							<div class="course_price d-flex flex-column align-items-center justify-content-center"><span>S/120.00</span></div>
-						</div>
-					</div>
-				</div>
-<!-- Popular Course Item -->
-<div class="col-lg-4 course_box">
-	<div class="card">
-		<img class="card-img-top" src="images/team512.png" alt="https://unsplash.com/@kellybrito">
-		<div class="card-body text-center">
-			<div class="card-title"><a href=" https://wa.me/51960111844?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 1</a></div>
-			<div class="card-title"><a href=" https://wa.me/51977471539?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 2</a></div>
-			<div class="card-text">COMPONENTE: DISCO SOLIDO <BR> MARCA: TEAMGRUP <BR> MODELO: CX2  <BR>CAPACIDAD : 512Gb <BR> -</div>
-	
-		</div>
-		<div class="price_box d-flex flex-row align-items-center">
-			<div class="course_author_image">
-				
-			</div>
-			<div class="course_author_name">DISCO SOLIDO </div>
-			<div class="course_price d-flex flex-column align-items-center justify-content-center"><span>S/140.00</span></div>
-		</div>
-	</div>
-</div>
-				<!-- Popular Course Item 
-				<div class="col-lg-4 course_box">
-					<div class="card">
-						<img class="card-img-top" src="images/agotado.jpg" alt="https://unsplash.com/@kellybrito">
-						<div class="card-body text-center">
-							<div class="card-title"><a href=" https://wa.me/51960111844?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 1</a></div>
-							<div class="card-title"><a href=" https://wa.me/51977471539?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 2</a></div>
-							<div class="card-text">COMPONENTE: DISCO SOLIDO <BR> MARCA: KINGSTON <BR> MODELO: A400 <BR>CAPACIDAD : 480GB <BR> -</div>
-						</div>
-						<div class="price_box d-flex flex-row align-items-center">
-							<div class="course_author_image">
-								
-							</div>
-							<div class="course_author_name">DISCO SOLIDO </div>
-							<div class="course_price d-flex flex-column align-items-center justify-content-center"><span>S/170.00</span></div>
-						</div>
-					</div>
-				</div>-->
-<!-- Popular Course Item 
-<div class="col-lg-4 course_box">
-	<div class="card">
-		<img class="card-img-top" src="images/ssd1tbkin.png" alt="https://unsplash.com/@kellybrito">
-		<div class="card-body text-center">
-			<div class="card-title"><a href=" https://wa.me/51960111844?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 1</a></div>
-							<div class="card-title"><a href=" https://wa.me/51977471539?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 2</a></div>
-			<div class="card-text">COMPONENTE: DISCO SOLIDO <BR> MARCA:KINGSTON <BR> MODELO: A400 <BR>CAPACIDAD : 1TB <BR> -</div>
-		</div>
-		<div class="price_box d-flex flex-row align-items-center">
-			<div class="course_author_image">
-				
-			</div>
-			<div class="course_author_name">DISCO SOLIDO </div>
-			<div class="course_price d-flex flex-column align-items-center justify-content-center"><span>S/250.00</span></div>
-		</div>
-	</div>
-</div>
--->
-<!-- Popular Course Item -->
-<div class="col-lg-4 course_box">
-	<div class="card">
-		<img class="card-img-top" src="images/teamnvme256.png" alt="https://unsplash.com/@kellybrito">
-		<div class="card-body text-center">
-			<div class="card-title"><a href=" https://wa.me/51960111844?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 1</a></div>
-							<div class="card-title"><a href=" https://wa.me/51977471539?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 2</a></div>
-			<div class="card-text">COMPONENTE: DISCO SOLIDO <BR> MARCA: TEAMGROUP <BR> MODELO: MP33 <BR>CAPACIDAD : 256GB <BR> -</div>
-		</div>
-		<div class="price_box d-flex flex-row align-items-center">
-			<div class="course_author_image">
-				
-			</div>
-			<div class="course_author_name">DISCO SOLIDO </div>
-			<div class="course_price d-flex flex-column align-items-center justify-content-center"><span>S/110.00</span></div>
-		</div>
-	</div>
-</div>		
-
-<!-- Popular Course Item -->
-<div class="col-lg-4 course_box">
-	<div class="card">
-		<img class="card-img-top" src="images/KINGNV500GB.jpg" alt="https://unsplash.com/@kellybrito">
-		<div class="card-body text-center">
-			<div class="card-title"><a href=" https://wa.me/51960111844?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 1</a></div>
-							<div class="card-title"><a href=" https://wa.me/51977471539?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 2</a></div>
-			<div class="card-text">COMPONENTE: DISCO SOLIDO <BR> MARCA: KINGSTON <BR> MODELO: NV2 <BR>CAPACIDAD : 500GB <BR> -</div>
-		</div>
-		<div class="price_box d-flex flex-row align-items-center">
-			<div class="course_author_image">
-				
-			</div>
-			<div class="course_author_name">DISCO SOLIDO </div>
-			<div class="course_price d-flex flex-column align-items-center justify-content-center"><span>S/170.00</span></div>
-		</div>
-	</div>
-</div>
-		
-<!-- Popular Course Item 
-<div class="col-lg-4 course_box">
-	<div class="card">
-		<img class="card-img-top" src="images/teamnvme1024.png" alt="https://unsplash.com/@kellybrito">
-		<div class="card-body text-center">
-			<div class="card-title"><a href=" https://wa.me/51960111844?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 1</a></div>
-							<div class="card-title"><a href=" https://wa.me/51977471539?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 2</a></div>
-			<div class="card-text">COMPONENTE: DISCO SOLIDO <BR> MARCA: TEAMGROUP <BR> MODELO: MP33 <BR>CAPACIDAD : 1tb<BR> - </div>
-		</div>
-		<div class="price_box d-flex flex-row align-items-center">
-			<div class="course_author_image">
-				
-			</div>
-			<div class="course_author_name">DISCO SOLIDO </div>
-			<div class="course_price d-flex flex-column align-items-center justify-content-center"><span>S/265.00</span></div>
-		</div>
-	</div>
-</div>-->
-	<!-- Popular Course Item 
-<div class="col-lg-4 course_box">
-	<div class="card">
-		<img class="card-img-top" src="images/agotado.jpg" alt="https://unsplash.com/@kellybrito">
-		<div class="card-body text-center">
-			<div class="card-title"><a href=" https://wa.me/51960111844?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 1</a></div>
-							<div class="card-title"><a href=" https://wa.me/51977471539?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 2</a></div>
-			<div class="card-text">COMPONENTE: RAM LAPTOP <BR> MARCA: KINGSTON <BR> MODELO: DDR4 <BR>CAPACIDAD : 8 GB<BR>BUSS : 3200</div>
-		</div>
-		<div class="price_box d-flex flex-row align-items-center">
-			<div class="course_author_image">
-				
-			</div>
-			<div class="course_author_name">RAM </div>
-			<div class="course_price d-flex flex-column align-items-center justify-content-center"><span>S/120.00</span></div>
-		</div>
-	</div>
-</div>-->
-<!-- Popular Course Item 
-<div class="col-lg-4 course_box">
-	<div class="card">
-		<img class="card-img-top" src="images/agotado.jpg" alt="https://unsplash.com/@kellybrito">
-		<div class="card-body text-center">
-			<div class="card-title"><a href=" https://wa.me/51960111844?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 1</a></div>
-							<div class="card-title"><a href=" https://wa.me/51977471539?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 2</a></div>
-			<div class="card-text">COMPONENTE: RAM LAPTOP<BR> MARCA: KINGSTON <BR> MODELO: DDR4 <BR>CAPACIDAD : 16GB <BR>BUSS : 3200</div>
-		</div>
-		<div class="price_box d-flex flex-row align-items-center">
-			<div class="course_author_image">
-				
-			</div>
-			<div class="course_author_name">RAM </div>
-			<div class="course_price d-flex flex-column align-items-center justify-content-center"><span>S/165.00</span></div>
-		</div>
-	</div>
-</div>
--->
-<!-- Popular Course Item 
-<div class="col-lg-4 course_box">
-	<div class="card">
-		<img class="card-img-top" src="images/agotado.jpg" alt="https://unsplash.com/@kellybrito">
-		<div class="card-body text-center">
-			<div class="card-title"><a href=" https://wa.me/51960111844?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 1</a></div>
-							<div class="card-title"><a href=" https://wa.me/51977471539?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 2</a></div>
-			<div class="card-text">COMPONENTE: RAM LAPTOP<BR> MARCA: KINGSTON <BR> MODELO: DDR4 <BR>CAPACIDAD : 32GB<BR>BUSS : 3200</div>
-		</div>
-		<div class="price_box d-flex flex-row align-items-center">
-			<div class="course_author_image">
-				
-			</div>
-			<div class="course_author_name">RAM </div>
-			<div class="course_price d-flex flex-column align-items-center justify-content-center"><span>S/328.00</span></div>
-		</div>
-	</div>
-</div>-->
-			<!-- Popular Course Item 
-<div class="col-lg-4 course_box">
-	<div class="card">
-		<img class="card-img-top" src="images/RAMTEROSPC.png" alt="https://unsplash.com/@kellybrito">
-		<div class="card-body text-center">
-			<div class="card-title"><a href=" https://wa.me/51960111844?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 1</a></div>
-							<div class="card-title"><a href=" https://wa.me/51977471539?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 2</a></div>
-			<div class="card-text">COMPONENTE: RAM PC<BR> MARCA: T-FORZE <BR> MODELO: DDR4 <BR>CAPACIDAD : 16GB<BR>BUSS : 3200</div>
-		</div>
-		<div class="price_box d-flex flex-row align-items-center">
-			<div class="course_author_image">
-				
-			</div>
-			<div class="course_author_name">RAM </div>
-			<div class="course_price d-flex flex-column align-items-center justify-content-center"><span>S/159.00</span></div>
-		</div>
-	</div>
-</div>-->
-<!-- Popular Course Item -->
-<div class="col-lg-4 course_box">
-	<div class="card">
-		<img class="card-img-top" src="images/KITTECLADO900MICROSOFT.jpg" alt="https://unsplash.com/@kellybrito">
-		<div class="card-body text-center">
-			<div class="card-title"><a href=" https://wa.me/51960111844?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 1</a></div>
-							<div class="card-title"><a href=" https://wa.me/51977471539?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 2</a></div>
-			<div class="card-text">COMPONENTE: KIT TECLADO + MOUSE<BR> MARCA: MICROSOFT <BR> MODELO: WIRELLES 900 <BR>TIPO : INALAMBRICO<BR>CONECTIVIDAD : USB</div>
-		</div>
-		<div class="price_box d-flex flex-row align-items-center">
-			<div class="course_author_image">
-				
-			</div>
-			<div class="course_author_name">KIT TECLADO + MOUSE </div>
-			<div class="course_price d-flex flex-column align-items-center justify-content-center"><span>S/175.00</span></div>
-		</div>
-	</div>
-</div>
-		
-<!-- Popular Course Item 
-<div class="col-lg-4 course_box">
-	<div class="card">
-		<img class="card-img-top" src="images/agotado.jpg" alt="https://unsplash.com/@kellybrito">
-		<div class="card-body text-center">
-			<div class="card-title"><a href=" https://wa.me/51960111844?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 1</a></div>
-							<div class="card-title"><a href=" https://wa.me/51977471539?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 2</a></div>
-			<div class="card-text">COMPONENTE: KIT TECLADO + MOUSE<BR> MARCA: TEAMGROUP <BR> MODELO:TE4031 <BR>TIPO : INALAMBRICO<BR>CONECTIVIDAD : USB</div>
-		</div>
-		<div class="price_box d-flex flex-row align-items-center">
-			<div class="course_author_image">
-				
-			</div>
-			<div class="course_author_name">KIT TECLADO + MOUSE </div>
-			<div class="course_price d-flex flex-column align-items-center justify-content-center"><span>S/60.00</span></div>
-		</div>
-	</div>
-</div>-->
-			<!-- Popular Course Item 
-<div class="col-lg-4 course_box">
-	<div class="card">
-		<img class="card-img-top" src="images/agotado.jpg" alt="https://unsplash.com/@kellybrito">
-		<div class="card-body text-center">
-			<div class="card-title"><a href=" https://wa.me/51960111844?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 1</a></div>
-							<div class="card-title"><a href=" https://wa.me/51977471539?text=Estoy%20interesado%20en%20un%20producto"> PARA COMPRAR CLICK AQUI 2</a></div>
-			<div class="card-text">COMPONENTE: MONITOR <BR> MARCA: TEROS <BR> MODELO:TE 2471G <BR>TIPO : CURVO <BR>CONECTIVIDAD : HDMI + DP</div>
-		</div>
-		<div class="price_box d-flex flex-row align-items-center">
-			<div class="course_author_image">
-				
-			</div>
-			<div class="course_author_name">MONITOR </div>
-			<div class="course_price d-flex flex-column align-items-center justify-content-center"><span>S/430.00</span></div>
-		</div>
-	</div>
-</div>-->
-
-			</div>
-		</div>		
-	</div>
-
+	<!--wp flotante -->
 	<!-- Footer -->
-
 	<footer class="footer">
 		<div class="container">
-			
-			<!-- Newsletter -->
-
-
-
-			<!-- Footer Content -->
-
-			<div class="footer_content">
-				<div class="row">
-
-					<!-- Footer Column - About -->
-					<div class="col-lg-3 footer_col">
-
-						<!-- Logo -->
-						<div class="logo_container">
-							<div class="logo">
-								<img src="images/nssletrablanca.png" alt="" width="180" height="70">
-								
-							</div>
+			<div class="row">
+	
+				<div class="col-lg-4 col-md-6 footer_col">
+					<div class="footer_column_content">
+						<div class="footer_logo">
+							<img src="images/nssletrablanca.png" alt="NSS Logo" style="width: 150px; filter: brightness(1.2);">
 						</div>
-
-						<p class="footer_about_text">Somos una empresa peruana de tecnología.</p>
-
-					</div>
-
-					<!-- Footer Column - Menu -->
-
-					<div class="col-lg-3 footer_col">
-						<div class="footer_column_title">Menu</div>
-						<div class="footer_column_content">
-							<ul>
-								<li class="footer_list_item"><a href="index.html">Inicio</a></li>
-								<li class="footer_list_item"><a href="#">Sobre Nosotros</a></li>
-								<li class="footer_list_item"><a href="#"></a></li>
-								<li class="footer_list_item"><a href="#">Tienda</a></li>
-								<li class="footer_list_item"><a href="contact.html">Contacto</a></li>
-							</ul>
+						<p class="footer_about_text">
+							Especialistas en soluciones tecnológicas, ciberseguridad y soporte técnico especializado. Potenciamos la continuidad operativa de tu negocio.
+						</p>
+						<div class="footer_social">
+							<a href="#"><i class="fab fa-facebook-f"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+							<a href="#"><i class="fab fa-linkedin-in"></i></a>
+							<a href="#"><i class="fab fa-tiktok"></i></a>
 						</div>
 					</div>
-
-
-					<!-- Footer Column - Usefull Links -->
-
-					<div class="col-lg-3 footer_col">
-						<div class="footer_column_title">Nuestros aliados</div>
-						<div class="footer_column_content">
-							<ul>
-								<li class="footer_list_item"><a href="#">LENOVO</a></li>
-								<li class="footer_list_item"><a href="#">DELL</a></li>
-								<li class="footer_list_item"><a href="#">HP</a></li>
-								<li class="footer_list_item"><a href="#">TRELLIX</a></li>
-								<li class="footer_list_item"><a href="#">MICROSOFT</a></li>
-							</ul>
-						</div>
-					</div>
-
-					<!-- Footer Column - Contact -->
-
-					<div class="col-lg-3 footer_col">
-						<div class="footer_column_title">Contacto</div>
-						<div class="footer_column_content">
-							<ul>
-								<li class="footer_contact_item">
-									<div class="footer_contact_icon">
-										<img src="images/placeholder.svg" alt="https://www.flaticon.com/authors/lucy-g">
-									</div>
-									av. Micaela Bastidas nro. 919 urb. el retablo,Comas
-								</li>
-								<li class="footer_contact_item">
-									<div class="footer_contact_icon">
-										<img src="images/placeholder.svg" alt="https://www.flaticon.com/authors/lucy-g">
-									</div>
-									Urb. Santa Rosa Mz Q lote 1, Callao 15046, Perú
-								</li>
-								<li class="footer_contact_item">
-									<div class="footer_contact_icon">
-										<img src="images/smartphone.svg" alt="https://www.flaticon.com/authors/lucy-g">
-									</div>
-									+51 960 111 844 
-								</li>
-								<li class="footer_contact_item">
-									<div class="footer_contact_icon">
-										<img src="images/smartphone.svg" alt="https://www.flaticon.com/authors/lucy-g">
-									</div>
-									+51 977 471 539
-								</li>
-								<li class="footer_contact_item">
-									<div class="footer_contact_icon">
-										<img src="images/envelope.svg" alt="https://www.flaticon.com/authors/lucy-g">
-									</div> Comercial@nss.pe
-								</li>
-							</ul>
-						</div>
-					</div>
-
 				</div>
+	
+				<div class="col-lg-4 col-md-6 footer_col">
+					<div class="footer_column_content">
+						<h2 class="footer_column_title">Servicios TI</h2>
+						<ul class="footer_list">
+							<li><a href="#">Soporte Técnico Especializado</a></li>
+							<li><a href="#">Seguridad Informática</a></li>
+							<li><a href="#">Soluciones Cloud Microsoft 365</a></li>
+							<li><a href="#">Infraestructura de Redes</a></li>
+							<li><a href="#">Licenciamiento de Software</a></li>
+						</ul>
+					</div>
+				</div>
+	
+				<div class="col-lg-4 col-md-6 footer_col">
+					<div class="footer_column_content">
+						<h2 class="footer_column_title">Contacto</h2>
+						<ul class="footer_contact_list">
+							<li>
+								<div class="footer_contact_icon"><i class="fas fa-map-marker-alt"></i></div>
+								<span>Callao, Lima - Perú</span>
+							</li>
+							<li>
+								<div class="footer_contact_icon"><i class="fas fa-phone"></i></div>
+								<span>+51 960111844</span>
+								<li>
+									<div class="footer_contact_icon"><i class="fas fa-phone"></i></div>
+									<span>+51 977471539</span>
+								</li>
+							</li>
+							<li>
+								<div class="footer_contact_icon"><i class="fas fa-envelope"></i></div>
+								<span>comercial@nss.pe</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+	
 			</div>
-
-			<!-- Footer Copyright -->
-
-			<div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
-				<div class="footer_copyright">
-					<span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved Netsecure and support SAC 
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
-				</div>
-				<div class="footer_social ml-sm-auto">
-					<ul class="menu_social">
-						<li class="menu_social_item"><a href="https://www.tiktok.com/@nss_techsafe"><i class="fab fa-tiktok"></i></a></li>
-						<li class="menu_social_item"><a href="https://www.linkedin.com/company/nss-pe/?originalSubdomain=pe"><i class="fab fa-linkedin-in"></i></a></li>
-						<li class="menu_social_item"><a href="https://www.instagram.com/nss_peru/"><i class="fab fa-instagram"></i></a></li>
-						<li class="menu_social_item"><a href="https://www.facebook.com/nssperu.pe/"><i class="fab fa-facebook-f"></i></a></li>
-					
-
-					</ul>
-				</div>
-			</div>
-
 		</div>
 	</footer>
 
