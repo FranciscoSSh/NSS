@@ -2171,5 +2171,68 @@ background: rgba(0, 86, 179, 0.2);
 	display: none;
 }
 
+.nss_testimonials_section {
+	padding: 100px 0;
+	background: #fcfcfc;
+}
 
+.testimonial_card {
+	background: #ffffff;
+	padding: 40px;
+	border-radius: 25px;
+	box-shadow: 0 15px 35px rgba(0,61,124,0.05);
+	border: 1px solid #eee;
+	transition: all 0.3s ease;
+	position: relative;
+	height: 100%;
+}
 
+.testimonial_card:hover {
+	transform: translateY(-10px);
+	border-color: #ffb606;
+	box-shadow: 0 20px 40px rgba(0,61,124,0.1);
+}
+
+.quote_icon {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	font-size: 40px;
+	color: #f0f0f0;
+	z-index: 1;
+}
+
+.testimonial_text {
+	font-style: italic;
+	color: #555;
+	line-height: 1.8;
+	margin-bottom: 25px;
+	position: relative;
+	z-index: 2;
+}
+
+.testimonial_user {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.user_image {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 3px solid #ffb606;
+}
+
+.user_info h4 {
+	color: #003d7c;
+	font-weight: 700;
+	margin: 0;
+	font-size: 16px;
+}
+
+.user_info span {
+	color: #777;
+	font-size: 13px;
+}
