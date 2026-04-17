@@ -1668,9 +1668,9 @@ input:last-of-type
 
 /* Efecto Hover (Al pasar el mouse) */
 .hero_slider_nav:hover {
-    background: #ffb606; /* Color naranja de tu tema */
-    border-color: #ffb606;
-    box-shadow: 0 0 20px rgba(255, 182, 6, 0.6); /* Resplandor neón */
+    background: #e00404; /* Color naranja de tu tema */
+    border-color: #e00404;
+    box-shadow: 0 0 20px rgba(243, 10, 2, 0.6); /* Resplandor neón */
     transform: translateY(-50%) scale(1.15);
 }
 
@@ -1855,11 +1855,11 @@ input:last-of-type
 .footer_column_title {
     font-size: 18px;
     font-weight: 700;
-    color: #ffffff;
+    color: #f30a0a;
     text-transform: uppercase;
     margin-bottom: 30px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #ffb606; /* Línea naranja de marca */
+    border-bottom: 2px solid #f8f6f1; /* Línea naranja de marca */
     display: inline-block;
 }
 
@@ -1886,7 +1886,7 @@ input:last-of-type
 }
 
 .footer_social a:hover {
-    background: #ffb606;
+    background: #d64106;
     transform: translateY(-5px);
 }
 
@@ -1934,7 +1934,7 @@ input:last-of-type
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    color: #ffb606;
+    color: #e75f10;
     margin-right: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
