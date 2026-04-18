@@ -847,7 +847,7 @@ h1, h2, h3, .main_nav_item a
 
 /* Colores de acento en el borde inferior para cada uno */
 .hero_box_col:nth-child(1) .hero_box { border-bottom: 4px solid #0056b3; } /* Azul */
-.hero_box_col:nth-child(2) .hero_box { border-bottom: 4px solid #ff9800; } /* Naranja */
+.hero_box_col:nth-child(2) .hero_box { border-bottom: 4px solid #f72004; } /* Naranja */
 .hero_box_col:nth-child(3) .hero_box { border-bottom: 4px solid #1a1a1a; } /* Negro */
 
 .hero_box_title {
@@ -876,7 +876,7 @@ h1, h2, h3, .main_nav_item a
 
 /* Cambia el color del icono según el botón al hacer hover */
 .hero_box_col:nth-child(1) .hero_box:hover .hero_box_icon { color: #0056b3; }
-.hero_box_col:nth-child(2) .hero_box:hover .hero_box_icon { color: #ff9800; }
+.hero_box_col:nth-child(2) .hero_box:hover .hero_box_icon { color: #f72004; }
 .hero_box_col:nth-child(3) .hero_box:hover .hero_box_icon { color: #555; }
 
 /* Ajuste para móviles: que no se peguen */
